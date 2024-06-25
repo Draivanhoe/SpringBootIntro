@@ -1,0 +1,14 @@
+server:
+  port: 5050
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/esercizio07
+    username: root
+    password: 1204691688
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop

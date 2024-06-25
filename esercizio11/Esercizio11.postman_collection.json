@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "67d317cb-b784-4847-ac15-ae79e65fcbbd",
+		"name": "Esercizio11",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34884871"
+	},
+	"item": [
+		{
+			"name": "add Java",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Java\",\r\n    \"inventor\": \"Tizio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:5050/programmingLanguages"
+			},
+			"response": []
+		},
+		{
+			"name": "add C++",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"C++\",\r\n    \"inventor\": \"Caio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:5050/programmingLanguages"
+			},
+			"response": []
+		},
+		{
+			"name": "add JavaScript",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"JavaScript\",\r\n    \"inventor\": \"Sempronio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:5050/programmingLanguages"
+			},
+			"response": []
+		},
+		{
+			"name": "add Go",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Go\",\r\n    \"inventor\": \"Godot\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:5050/programmingLanguages"
+			},
+			"response": []
+		},
+		{
+			"name": "paginatedResultsSortedByLanguageName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5050/programmingLanguages?page=1&size=2&sort=name",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5050",
+					"path": [
+						"programmingLanguages"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inventor",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inventor\": \"Ivan Frangipani\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5050/programmingLanguages/89f0ce0a-0704-464c-949d-74c479f0c9a5"
+			},
+			"response": []
+		}
+	]
+}
